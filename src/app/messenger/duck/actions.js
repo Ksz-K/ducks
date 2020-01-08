@@ -5,29 +5,30 @@ const addComment = newComment => ({
   newComment
 });
 
-const removeComment = item => ({
+const removeComment = id2remove => ({
   type: types.REMOVE_COMMENT,
-  item
+  id2remove
 });
 
-const editComment = item => ({
+const editComment = (id2comment, updatedComment) => ({
   types: types.EDIT_COMMENT,
-  item
+  id2comment,
+  updatedComment
 });
 
-const thumUp = item => ({
+const thumUp = id2thum => ({
   types: types.THUMB_UP_COMMENT,
-  item
+  id2thum
 });
 
-const thumDown = item => ({
+const thumDown = id2thum => ({
   types: types.THUMB_DOWN_COMMENT,
-  item
+  id2thum
 });
 
-const newUser = item => ({
+const newUser = nick => ({
   types: types.NEW_USER,
-  item
+  nick
 });
 
 export default {
