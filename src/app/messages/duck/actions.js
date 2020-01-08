@@ -26,16 +26,10 @@ const thumDown = id2thum => ({
   id2thum
 });
 
-const newUser = nick => ({
-  types: types.NEW_USER,
-  nick
-});
-
 export default {
   addComment,
   removeComment,
   editComment,
   thumUp,
-  thumDown,
-  newUser
+  thumDown
 };
