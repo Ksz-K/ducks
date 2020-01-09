@@ -1,12 +1,11 @@
 import React from "react";
-import Comment from "./Comment";
+import Comment from "./CommentContainer";
 
-const CommentsList = ({ comments }) => (
-  <ul>
-    {comments.map(comment => (
+const CommentList = ({ messages }) => (
+  <ul style={{ listStyle: "none" }}>
+    {messages.map(comment => (
       <Comment key={comment.id} {...comment} />
     ))}
   </ul>
 );
-
-export default CommentsList;
+export default CommentList;

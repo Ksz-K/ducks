@@ -11,18 +11,18 @@ export const removeComment = id2remove => ({
 });
 
 export const editComment = (id2comment, updatedComment) => ({
-  types: types.EDIT_COMMENT,
+  type: types.EDIT_COMMENT,
   id2comment,
   updatedComment
 });
 
 export const thumUp = id2thum => ({
-  types: types.THUMB_UP_COMMENT,
+  type: types.THUMB_UP_COMMENT,
   id2thum
 });
 
 export const thumDown = id2thum => ({
-  types: types.THUMB_DOWN_COMMENT,
+  type: types.THUMB_DOWN_COMMENT,
   id2thum
 });
 

@@ -3,8 +3,8 @@ import messageReducer from "./app/messages/duck";
 import usersReducer from "./app/users/duck";
 
 const rootReducer = combineReducers({
-  messages: messageReducer,
-  users: usersReducer
+  chat: messageReducer,
+  subscribers: usersReducer
 });
 
 export default rootReducer;

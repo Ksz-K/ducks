@@ -3,25 +3,27 @@ import types from "./types";
 const INITIAL_STATE = {
   messages: [
     {
-      text: "Hello Jimmy",
+      text: "Hu is the new leader of China.",
       from: "Max",
       id: 1,
-      score: null
+      agree: 0,
+      against: 0
     },
     {
-      text: "Hello Max",
+      text: "Who is the new leader of China ?",
       from: "Jimmy",
       id: 2,
-      score: null
+      agree: 0,
+      against: 0
     },
     {
-      text: "How are you?",
+      text: "Maybe we should ask Kofi ?",
       from: "Max",
       id: 3,
-      score: null
+      agree: 0,
+      against: 0
     }
-  ],
-  users: ["Jimmy", "Max"]
+  ]
 };
 
 const messageReducer = (state = INITIAL_STATE, action) => {
@@ -47,7 +49,8 @@ const messageReducer = (state = INITIAL_STATE, action) => {
                 text: action.updatedComment,
                 from: message.from,
                 id: message.id,
-                score: message.score
+                agree: message.agree,
+                against: message.against
               }
             : message
         )
@@ -61,7 +64,8 @@ const messageReducer = (state = INITIAL_STATE, action) => {
                 text: message.text,
                 from: message.from,
                 id: message.id,
-                score: 1
+                agree: message.agree + 1,
+                against: message.against
               }
             : message
         )
@@ -75,7 +79,8 @@ const messageReducer = (state = INITIAL_STATE, action) => {
                 text: message.text,
                 from: message.from,
                 id: message.id,
-                score: -1
+                agree: message.agree,
+                against: message.against + 1
               }
             : message
         )
