@@ -1,15 +1,12 @@
-import React from "react";
-import logo from "./logo.svg";
+import React, {Fragment} from "react";
+import Header from "./components/Header" ;
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>I am learning REDUX</p>
-      </header>
-    </div>
+    <Fragment>
+<Header />
+      </Fragment>      
   );
 }
 

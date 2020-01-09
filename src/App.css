@@ -1,19 +1,16 @@
-body {
-  background-color: #282c34;
-}
 
 p {
   color: #fff;
   font-size: larger;
   font-weight: bolder;
 }
-.App {
+.App { background-color: #282c34;
   text-align: center;
 }
 
 .App-logo {
-  height: 30vmin;
-  margin: 5rem 0 5rem 0;
+  height: 5rem;
+  margin-top: 2rem ;
   pointer-events: none;
 }
 

@@ -1,6 +1,6 @@
 import { createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
-import rootReducer from "./app/messages/duck";
+import rootReducer from "./reducers";
 
 const store = createStore(rootReducer, composeWithDevTools());
 
