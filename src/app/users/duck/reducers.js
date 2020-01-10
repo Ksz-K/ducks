@@ -1,10 +1,10 @@
 import types from "./types";
 
-const INITIAL_STATE = {
+const initialState = {
   users: ["Jimmy", "Max"]
 };
 
-const usersReducer = (state = INITIAL_STATE, action) => {
+const usersReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.NEW_USER:
       return {
