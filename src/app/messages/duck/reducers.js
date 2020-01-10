@@ -1,6 +1,6 @@
 import types from "./types";
 
-const INITIAL_STATE = {
+const initialState = {
   messages: [
     {
       text: "Hello Jimmy",
@@ -24,7 +24,7 @@ const INITIAL_STATE = {
   users: ["Jimmy", "Max"]
 };
 
-const messageReducer = (state = INITIAL_STATE, action) => {
+const messageReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.ADD_COMMENT:
       return {
